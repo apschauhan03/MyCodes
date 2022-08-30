@@ -1,0 +1,11 @@
+S1 = int(input("Enter the NUMBERS\n"))
+S2 = int(input("Enter the NUMBERS\n"))
+S3 = int(input("Enter the NUMBERS\n"))
+S4 = int(input("Enter the NUMBERS\n"))
+S5 = int(input("Enter the NUMBERS\n"))
+S6 = int(input("Enter the NUMBERS\n"))
+S7 = int(input("Enter the NUMBERS\n"))
+S8 = int(input("Enter the NUMBERS\n"))
+s = {S1,S2,S3,S4,S5,S6,S7,S8}
+print(s)
+print(type(s))
