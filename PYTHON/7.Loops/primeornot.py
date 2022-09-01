@@ -6,7 +6,7 @@ a = int(input("Enter the number\n"))
 
 i = 1
 
-while(i<pow(a,.5)):
+while(i<10):
     if(a%i==0):
         f = False
         break
