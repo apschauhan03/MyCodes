@@ -1,0 +1,15 @@
+.box{
+   
+    margin: 20px; /*<!--if we just say margin it will apply to every side--> */
+    padding: 10px;/*padding ka color element jispe hui hai uska color rhege*/
+    border: solid rgb(52, 11, 93) 3px;/*makes its own space*/
+}
+#div1{
+    background-color: red;/*this  will not apply color to the margin but it will to the whole box*/
+}
+#div2{
+    background-color: green;/*but margin area of div 2 will get color from the parent  element*/
+}
+#div3{
+    background-color: blue;
+}
