@@ -1,0 +1,18 @@
+#para1 {
+    font-size: 1cm;
+}
+
+#para2 {
+    font-family: monospace;/*for same wideth*/
+}
+
+#para3 {
+    font-size: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+#para4 {
+    word-spacing: 10px;
+    letter-spacing: 2px;
+}
