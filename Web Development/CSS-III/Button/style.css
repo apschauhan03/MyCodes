@@ -1,0 +1,26 @@
+div.button{
+    margin: 100px;
+    height: 200px;
+    width: 500px;
+    padding: 20px;
+    background-color: aqua;
+    color: black;
+
+    box-shadow: gray 30px 30px 7px;
+    font-size: 75pt;
+    text-align: center;
+    border-radius: 30pt;
+}
+
+div.button:hover{
+    transform: translate(-20px,-20px);
+    box-shadow: gray 60px 60px 14px;
+    transition: 0.5s;
+}
+
+div.button:active{
+    transform: translate(20px,20px);
+    transition: 0.1s;
+    box-shadow: gray 0px 0px ;
+
+}

@@ -1,0 +1,67 @@
+.Container{
+    display: inline-block;
+    height: 600px;
+    width: 600px;
+    background-color: aquamarine;
+    border: dotted black 1px;
+    
+}
+
+.box{
+    display: inline-block;
+    margin: 40px;
+    height: 50px;
+    width: 50px;
+    background-color: brown;
+    animation: bounce 1.6s;
+    animation-iteration-count: infinite;
+}
+.one.player{
+    display: inline-block;
+    margin: 40px;
+    height: 50px;
+    width: 50px;
+    background-color: cornflowerblue;
+    animation: playerbounce 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    transform: translateY(240px);
+}
+
+
+.Container:active .one.player{
+        animation-play-state: running;
+}
+
+
+
+
+.one{
+    animation-timing-function: linear;
+}
+.two{
+    animation-timing-function: ease-out;
+}
+.three{
+    animation-timing-function: ease-in-out;
+}
+.four{
+    animation-timing-function: linear;
+}
+@keyframes bounce{
+    0%{
+
+    }
+    50%{
+        transform: translateY(480px);
+    }
+    100%{
+
+    }
+}
+
+@keyframes playerbounce{
+    50%{
+        transform: translateY(240px) translateX(480px);
+    }
+}

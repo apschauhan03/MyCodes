@@ -1,0 +1,20 @@
+div{
+    background-color: rgb(183, 12, 12);
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    color: blue;
+    padding: 20px;
+}
+
+.one{
+    transform: scale(2,2);
+}
+
+.two{
+    transform: rotate(20deg);
+}
+
+.three{
+    transform: translate(10px,10px);
+}
