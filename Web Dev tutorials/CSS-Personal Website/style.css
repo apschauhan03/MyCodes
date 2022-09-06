@@ -1,0 +1,28 @@
+
+body {
+  background-color: rgb(200, 238, 247);
+}
+
+hr {
+  border-style: none;
+  background-color: white;
+  border-style:  none;
+  border-top-style: dotted;
+  height: 0px;
+  background-color: rgb(200, 238, 247);
+  border-color: gray;
+  border-width: 3px;
+
+  /* height: 0px; */
+  width: 3%;
+}
+h1 {
+    color: #037b7b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h3 {
+    color: #037b7b;
+}
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
