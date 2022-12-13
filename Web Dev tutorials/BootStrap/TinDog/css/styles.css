@@ -2,20 +2,18 @@ body{
     font-family: Montserrat;
 }
 
-
-#title{
-    background-color: #ff4c68;
-    color: white;
-}
 h1{
     /* margin-top: 100px; */
     font-family: 'Montserrat';
-    size: 5rem;
-    line-height: 1.5;
+   
 }
 
+p{
+    font-family: roboto mono;
+    color: grey;
+}
 
-/* Title section */
+/* Navigation bar */
 .navbar{
     margin:0 0 4.5rem 0;
 }
@@ -27,6 +25,25 @@ h1{
     color:white;
 
 }
+
+/* Title section */
+
+
+
+#title{
+    background-color: #ff4c68;
+    color: white;
+}
+
+
+
+.big-heading{
+    size: 5rem;
+    line-height: 1.5;
+}
+
+
+
 
 .buttons{
     margin:5% 3% 5% 0;
@@ -54,10 +71,7 @@ h1{
     text-align: center;
     padding: 5%;
 }
-p{
-    font-family: roboto mono;
-    color: grey;
-}
+
 
 .facc{
     color:#ef8172;

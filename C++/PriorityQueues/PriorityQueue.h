@@ -47,24 +47,46 @@ class priorityQueue {
         
     }
 
-    void remove_Min() {
-        if(pq.isEmpty())
-            return;
+    int remove_Min() {
+        if(pq.size()==0)
+            return 0;
 
-        int last_Element = pq[pq.size()-1];
-        pq[pq.size()-1] = pq[0];
-        pq[0] = last_Element;
+        int ans = pq[0];
+        pq[0] = pq[pq.size()-1];
         pq.pop_back();
 
         int parent_Index = 0;
-        int min_Index = 0;
-        while (parent_Index!=pq.size())
+        int CI_Left = (2*parent_Index+1); 
+        int CI_Right = (2*parent_Index+2); 
+       
+
+
+        while (CI_Left<pq.size())
         {
-            int child_indexLeft = (2*parent_Index+1)/2;
-            int child_indexright = (2*parent_Index+2)/2;
+             int min_Index = parent_Index;
+            if(pq[min_Index]>pq[CI_Left])
+                min_Index = CI_Left;
+
+            if(pq[min_Index]>pq[CI_Right]&&CI_Right<pq.size())
+                min_Index = CI_Right;
+
+
+            if(min_Index==parent_Index)
+                break;
+
 
             
+            int temp = pq[min_Index];
+            pq[min_Index] = pq[parent_Index];
+            pq[parent_Index] = temp;
+
+            parent_Index = min_Index;
+             CI_Left = (2*parent_Index+1); 
+             CI_Right = (2*parent_Index+2); 
         }
+        
+
+        return ans;
         
     }
 
