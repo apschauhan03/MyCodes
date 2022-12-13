@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify Clone</title>
+</head>
+<body>
+    
+    <!-- Navigation bar -->
+    <nav>
+        <ul class="Navbar">
+            <li class="Brand Navitems"><img style="height: 40px;" src="Images/spotify-128.png" alt="Spotifylogo"></li>
+            <li class="Brand Navitems">Spotify</li>
+            <li class="Navitems">Home</li>
+            <li class="Navitems">About</li>
+        </ul>
+    </nav>
+
+    <!-- Container for the image -->
+    <div class="Container">
+        <!-- Creating two division inside it -->
+        <div class="Songcontainer">
+            <h1 style="margin-left:30px; margin-bottom: 12px;">Best of SRK</h1>
+            <div class="songitem">
+                <img src="images/pathaan-shah-rukh-khan-deepika-padukones-sizzling-chemistry-in-new-song-besharam-rang-left-fans-gasping-for-air-netizens-thirsty-comments-are-to-watch-out-for-001.jpg" alt="art2">
+                <span>Besharam Rang</span>
+            <span id="Timeplay">3:14 <i id="1" class="fa-sharp songitemplay fa-solid fa-circle-play"></i></span>
+            </div>
+            <div class="songitem">
+                <img src="images/janam-janam-lyrics.jpg" alt="art1">
+                <span>Janam Janam</span>
+            <span id="Timeplay">4:13 <i id="2" class="fa-sharp songitemplay fa-solid fa-circle-play"></i></span>
+            </div>
+            <div class="songitem">
+                <img src="images/Zaalima.jpg" alt="art3">
+                <span>Zaalima</span>
+            <span id="Timeplay">5:07 <i id="3" class="fa-sharp songitemplay fa-solid fa-circle-play"></i></span>
+            </div>
+            <div class="songitem">
+                <img src="images/MERE-NAAM-TU.jpg" alt="art4">
+                <span>Mere Naam Tu</span>
+            <span id="Timeplay">5:58 <i id="4" class="fa-sharp songitemplay fa-solid fa-circle-play"></i></span>
+            </div>
+            <div class="songitem">
+                <img src="images/Manwalaage.jpg" alt="art5">
+                <span>Manwa Lage</span>
+            <span id="Timeplay">4:32 <i id="5" class="fa-sharp songitemplay fa-solid fa-circle-play"></i></span>
+            </div>
+            <div class="songitem">
+                <img src="images/jabrafan.jpg" alt="art6">
+                <span>Jabra Fan</span>
+            <span id="Timeplay">3:49 <i id="6" class="fa-sharp songitemplay fa-solid fa-circle-play"></i></span>
+            </div>
+            <div class="songitem">
+                <img src="images/ishqbazi.jpg" alt="art7">
+                <span>Issaqbaazi</span>
+            <span id="Timeplay">5:09 <i id="7" class="fa-sharp songitemplay fa-solid fa-circle-play"></i></span>
+            </div>
+            <div class="songitem">
+                <img src="images/yuhhi.jpg" alt="art8">
+                <span>Yun Hi Chala Chal</span>
+            <span id="Timeplay">7:26 <i id="8" class="fa-sharp songitemplay fa-solid fa-circle-play"></i></span>
+            </div>
+            <div class="songitem">
+                <img src="images/mitwa.jpg" alt="art9">
+                <span>Mitwa</span>
+            <span id="Timeplay">6:01 <i id="9" class="fa-sharp songitemplay fa-solid fa-circle-play"></i></span>
+            </div>
+            <div class="songitem">
+                <img src="images/haule haule.jpg" alt="art10">
+                <span>Haule Haule</span>
+            <span id="Timeplay">4:56 <i id="10" class="fa-sharp songitemplay fa-solid fa-circle-play"></i></span>
+            </div>
+            <div class="songitem">
+                <img src="images/chammak.jpeg" alt="art11">
+                <span>Chammak Challo</span>
+            <span id="Timeplay">4:06 <i id="11" class="fa-sharp songitemplay fa-solid fa-circle-play"></i></span>
+            </div>
+            <div class="songitem">
+                <img src="images/i am the best.jpg" alt="art12">
+                <span>I am the Best</span>
+            <span id="Timeplay">4:04 <i id="12" class="fa-sharp songitemplay fa-solid fa-circle-play"></i></span>
+            </div>
+        </div>
+        <div class="right"></div>
+    </div>
+
+
+    <!-- Container for bottom -->
+    <div class="Bottom">
+        <input type="range" id="progressbar" name="range" min="0" value="0" max="100">
+        <div class="icons">
+            <i class="fa-solid fa-2x fa-backward" id="backward"></i>
+            <i class="fa-sharp fa-2x fa-solid fa-circle-play" id="playButton"></i>
+            <i class="fa-solid fa-2x fa-forward" id="forward"></i>
+        </div>
+        <div class="gifandname">
+            <img id="gif" src="images/equileser.gif" width="80px" alt="waves"><span id="mastersongname">Besharam Rang</span>
+        </div>
+    </div>
+
+
+
+    <!-- JavaScripts -->
+    <script src="https://kit.fontawesome.com/7dd569c76e.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

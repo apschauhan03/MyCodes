@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+
+
+
+body {
+    background-color: aliceblue;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.Brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.Brand img{
+    padding: 15px 10px;
+}
+.Navbar {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    font-family: "Ubuntu",sans-serif;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+.Container{
+    display: flex;
+    min-height: 55vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    margin: 24px auto;
+    width: 70%;
+    border-radius: 20px;
+    background-image: url("images/bc.jpg");
+    background-position: center;
+    background-size:  1080px 480px;
+    
+}
+.Songcontainer {
+    margin: 20px 5px;
+}
+.songitem {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150%;
+    border-radius: 20px;
+    margin: 5px;
+}
+.songitem img {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    padding-left: 4px;
+}
+#Timeplay {
+    margin:4px 3px;
+    cursor: pointer;
+}
+
+
+.Bottom {
+    position: fixed;
+    height: 100px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#progressbar {
+    /* padding-top: 20px; */
+    width: 500px;
+    cursor: pointer;
+}
+.icons i {
+    padding: 20px 10px;
+    cursor: pointer;
+}
+
+.gifandname {
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    align-items: center;
+    
+}
+.gifandname img {
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
