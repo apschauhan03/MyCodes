@@ -1,0 +1,22 @@
+<%- include("header") %> 
+    <div class="box" id="heading">
+      <h1><%= dayname %></h1>
+    </div>
+
+    <div class="box">
+       <form action="/remove" method="post">
+       <%  addedtasks.forEach(function(item){%>
+          <div class="item">
+            <input type="checkbox" name="checkbox" value="<%= item._id %>" onchange="this.form.submit()">
+            <p><%= item.name %> </p>
+          </div>
+        <%})%>
+        <input type="hidden" name="listName" value="<%= dayname %> ">
+        </form>
+      <form class="item" action="/" method="post">
+        <input autofocus type="text" name="newtask" placeholder="New task" autocomplete="off" />
+        <button name="list" value="<%=dayname%> " type="submit">+</button>
+      </form>
+
+    </div>
+<%- include("footer") %> 
